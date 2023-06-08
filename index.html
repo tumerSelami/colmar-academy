@@ -43,7 +43,7 @@
                     <img src="./resources/images/information-main.jpg" alt="" id="info-img">
                     <h2>It Doesn't Hurt to Keep Practicing</h2>
                     <blockquote>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti officia aliquam dolorem obcaecati.</p>
+                        <p id="info-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti officia aliquam dolorem obcaecati.</p>
                         <figcaption>—Emanuel, <cite>Sr Strategist at Hiring.com</cite></figcaption>
                     </blockquote>
                 </figure>
@@ -82,12 +82,12 @@
         <section id="learning">
             <h2>Start Learning!</h2>
 
-            <div class="courses">
+            <div id="courses">
                 <figure class="course-tile">
                     <img src="./resources/images/course-software.jpg" alt="">
                     <figcaption>
                         <h3>Software Engineering</h3>
-                        <span class="courses-details">Courses</span>
+                        <p class="course-details">Courses</p>
                         <p class="course-tile-text">Web Development, Mobile Development, iOT, API's</p>
                     </figcaption>
                 </figure>
@@ -96,7 +96,7 @@
                     <img src="./resources/images/course-computer-art.jpg" alt="">
                     <figcaption>
                         <h3>Computer Art</h3>
-                        <span class="courses-details">Courses</span>
+                        <p class="course-details">Courses</p>
                         <p class="course-tile-text">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
                     </figcaption>
                 </figure>
@@ -105,7 +105,7 @@
                     <img src="./resources/images/course-design.jpg" alt="">
                     <figcaption>
                         <h3>Design</h3>
-                        <span class="courses-details">Courses</span>
+                        <p class="course-details">Courses</p>
                         <p class="course-tile-text">User Experience Design, User Research, Visual Design</p>
                     </figcaption>
                 </figure>
@@ -114,7 +114,7 @@
                     <img src="./resources/images/course-data.jpg" alt="">
                     <figcaption>
                         <h3>Data</h3>
-                        <span class="courses-details">Courses</span>
+                        <p class="course-details">Courses</p>
                         <p class="course-tile-text">Data Science, Big Data, SQL, Data Visualization</p>
                     </figcaption>
                 </figure>
@@ -123,7 +123,7 @@
                     <img src="./resources/images/course-business.jpg" alt="">
                     <figcaption>
                         <h3>Business</h3>
-                        <span class="courses-details">Courses</span>
+                        <p class="course-details">Courses</p>
                         <p class="course-tile-text">Product Development, Business Development, StartUp</p>
                     </figcaption>
                 </figure>
@@ -132,7 +132,7 @@
                     <img src="./resources/images/course-marketing.jpg" alt="">
                     <figcaption>
                         <h3>Marketing</h3>
-                        <span class="courses-details">Courses</span>
+                        <p class="course-details">Courses</p>
                         <p class="course-tile-text">Analytics, Content Marketing, Mobile Marketing</p>
                     </figcaption>
                 </figure>
@@ -142,35 +142,37 @@
         <section id="exhibit">
             <h2>Thesis Exhibit</h2>
 
-            <article>
-                <figure>
-                    <video controls width="600">
-                        <source src="./resources/videos/thesis.mp4" type="video/mp4">
-                    </video>
-                    <h2>Reimagine Urban</h2>
-                    <blockquote>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo perferendis unde laboriosam sapiente voluptatibus recusandae cum dolorem nobis cumque beatae!</p>
-                    </blockquote>
-                </figure>
-            </article>
-
-            <aside>
-                <figure class="exhibit-tile">
-                    <img src="./resources/images/thesis-fisma.jpg" alt="">
-                    <figcaption>
-                        <h3>Fisma: Design and Prototype</h3>
-                        <p class="exhibit-tile-text">Designer showcase of new prototype product</p>
-                    </figcaption>
-                </figure>
-                
-                <figure class="exhibit-tile">
-                    <img src="./resources/images/thesis-now-and-then.jpg" alt="">
-                    <figcaption>
-                        <h3>Now and Then</h3>
-                        <p class="exhibit-tile-text">Research study about New York</p>
-                    </figcaption>
-                </figure>
-            </aside>
+            <div id="exhibit-details">
+                <article>
+                    <figure>
+                        <video loop autoplay>
+                            <source src="./resources/videos/thesis.mp4" type="video/mp4">
+                        </video>
+                        <h3>Reimagine Urban</h3>
+                        <blockquote>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo perferendis unde laboriosam sapiente voluptatibus recusandae cum dolorem nobis cumque beatae!</p>
+                        </blockquote>
+                    </figure>
+                </article>
+    
+                <aside>
+                    <figure class="exhibit-tile">
+                        <img src="./resources/images/thesis-fisma.jpg" alt="">
+                        <figcaption>
+                            <h3>Fisma: Design and Prototype</h3>
+                            <p class="exhibit-tile-text">Designer showcase of new prototype product</p>
+                        </figcaption>
+                    </figure>
+                    
+                    <figure class="exhibit-tile">
+                        <img src="./resources/images/thesis-now-and-then.jpg" alt="">
+                        <figcaption>
+                            <h3>Now and Then</h3>
+                            <p class="exhibit-tile-text">Research study about New York</p>
+                        </figcaption>
+                    </figure>
+                </aside>
+            </div>
         </section>
     </main>
 

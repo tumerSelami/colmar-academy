@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 html {
@@ -58,8 +58,12 @@ ul {
     max-width: 100%;
 }
 
+#intro header {
+    max-width: 40%;
+}
+
 #intro figure {
-    flex-basis: 60%;
+    max-width: 60%;
 }
 
 #intro img {
@@ -85,6 +89,151 @@ ul {
 }
 
 /*INFO*/
+
+#info {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    padding: 3.2rem 2.4rem;
+}
+
+#info article {
+    max-width: 60%;
+}
+
+#info-img {
+    max-width: 100%;
+}
+
+.info-tile {
+    display: flex;
+    align-items: center;
+}
+
+.info-tile p {
+    padding-block: 0.8rem;
+}
+
+#info aside img {
+    max-width: 35%;
+    height: auto;
+    padding: 0 1.6rem 1.6rem 0;
+}
+
+#info h2 {
+    font-size: 3.6rem;
+    padding-block: 3.2rem 2.4rem;
+}
+
+#info h3 {
+    font-size: 2.4rem;
+}
+
+#info-txt {
+    font-size: 2rem;
+    padding-bottom: 3.2rem;
+}
+
+#details {
+    max-width: 40%;
+}
+
 /*LEARNING*/
+
+#learning {
+    padding: 3.2rem 7.2rem;
+    background-color: hsl(0, 0%, 70%);
+}
+
+#learning h2 {
+    font-size: 3.6rem;
+    padding-block: 3.2rem;
+    text-align: center;
+}
+
+#courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.2rem;
+    justify-content: center;
+}
+
+.course-tile {
+    max-width: 532px;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.course-tile figcaption {
+    padding: 1.6rem;
+}
+
+.course-details {
+    text-transform: uppercase;
+    padding-block: 1.6rem;
+}
+
+.course-tile h3 {
+    font-size: 2.6rem;
+}
 /*EXHIBIT*/
+
+#exhibit {
+    padding: 3.2rem 2.4rem;
+}
+
+#exhibit h2 {
+    font-size: 3.6rem;
+    padding-bottom: 3.2rem;
+    text-align: center;
+}
+
+#exhibit h3 {
+    font-size: 2.6rem;
+}
+
+#exhibit blockquote {
+    margin-top: 0.8rem;
+}
+
+#exhibit-details {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.4rem;
+}
+
+#exhibit-details article {
+    max-width: 60%;
+}
+
+#exhibit-details aside {
+    max-width: 40%;
+}
+
+#exhibit video {
+    max-width: 100%;
+    margin-bottom: 2.4rem;
+}
+
+.exhibit-tile {
+    display: flex;
+    align-items: center;
+    background-color: hsl(0, 0%, 70%);
+    margin-bottom: 1.6rem;
+}
+
+.exhibit-tile img {
+    max-width: 35%;
+    padding: 1.6rem;
+}
+
 /*FOOTER*/
+
+footer {
+    padding:1.6rem 2.4rem;
+    border-top: 1px solid hsl(0, 0%, 11%);
+}
+
+footer a {
+    float: right;
+    padding-inline: 1rem;
+}
