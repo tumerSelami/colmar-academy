@@ -11,6 +11,48 @@ html {
     font-size: 10px;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-size: 3.6rem;
+    padding-block: 3.2rem 2.4rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2.6rem;
+}
+
+h1 {
+    font-size: 4.6rem;
+}
+
+/*COMMON*/
+
+#intro,
+#info {
+    padding: 3.2rem 2.4rem;
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+#intro figure,
+#info article,
+#exhibit-details article {
+    flex: 1 1 60%;
+}
+
+#intro header,
+#info aside,
+#exhibit-details aside {
+    flex: 1 1 40%;
+}
+
 /*NAVBAR*/
 
 nav {
@@ -37,7 +79,7 @@ ul {
     width: 4.4rem;
 }
 
-#logo #brand-name {
+#brand-name {
     font-size: 2.4rem;
     text-transform: uppercase;
 }
@@ -49,60 +91,21 @@ ul {
 
 /*INTRO*/
 
-#intro {
-    background-color: hsl(0, 0%, 70%);
-    padding: 3.2rem 2.4rem;
-    display: flex;
-    align-items: center;
-    gap: 2.4rem;
-    max-width: 100%;
-}
-
-#intro header {
-    max-width: 40%;
-}
-
-#intro figure {
-    max-width: 60%;
-}
-
-#intro img {
-    max-width: 100%;
-    height: auto;
-}
-
-#intro h1 {
-    font-size: 4.6rem;
-}
-
 #intro p {
     font-size: 2.5rem;
     padding-block: 2rem;
 }
 
 #intro button {
-    background-color: hsl(0, 0%, 11%);
-    color: hsl(0, 0%, 95%);
     border: none;
-    padding-block: 0.8rem;
+    padding-block: 1rem;
     width: 100%;
 }
 
 /*INFO*/
 
 #info {
-    display: flex;
-    align-items: center;
-    gap: 2.4rem;
-    padding: 3.2rem 2.4rem;
-}
-
-#info article {
-    max-width: 60%;
-}
-
-#info-img {
-    max-width: 100%;
+    align-items: flex-start;
 }
 
 .info-tile {
@@ -110,23 +113,17 @@ ul {
     align-items: center;
 }
 
-.info-tile p {
-    padding-block: 0.8rem;
+.info-tile-text {
+    padding-block: 1.6rem;
+}
+
+#info h2 {
+    text-align: left;
 }
 
 #info aside img {
     max-width: 35%;
-    height: auto;
     padding: 0 1.6rem 1.6rem 0;
-}
-
-#info h2 {
-    font-size: 3.6rem;
-    padding-block: 3.2rem 2.4rem;
-}
-
-#info h3 {
-    font-size: 2.4rem;
 }
 
 #info-txt {
@@ -134,33 +131,21 @@ ul {
     padding-bottom: 3.2rem;
 }
 
-#details {
-    max-width: 40%;
-}
-
 /*LEARNING*/
 
 #learning {
     padding: 3.2rem 7.2rem;
-    background-color: hsl(0, 0%, 70%);
-}
-
-#learning h2 {
-    font-size: 3.6rem;
-    padding-block: 3.2rem;
-    text-align: center;
 }
 
 #courses {
     display: flex;
     flex-wrap: wrap;
-    gap: 3.2rem;
     justify-content: center;
+    gap: 3.2rem;
 }
 
 .course-tile {
     max-width: 532px;
-    background-color: hsl(0, 0%, 95%);
 }
 
 .course-tile figcaption {
@@ -172,23 +157,10 @@ ul {
     padding-block: 1.6rem;
 }
 
-.course-tile h3 {
-    font-size: 2.6rem;
-}
 /*EXHIBIT*/
 
 #exhibit {
     padding: 3.2rem 2.4rem;
-}
-
-#exhibit h2 {
-    font-size: 3.6rem;
-    padding-bottom: 3.2rem;
-    text-align: center;
-}
-
-#exhibit h3 {
-    font-size: 2.6rem;
 }
 
 #exhibit blockquote {
@@ -201,14 +173,6 @@ ul {
     gap: 2.4rem;
 }
 
-#exhibit-details article {
-    max-width: 60%;
-}
-
-#exhibit-details aside {
-    max-width: 40%;
-}
-
 #exhibit video {
     max-width: 100%;
     margin-bottom: 2.4rem;
@@ -217,13 +181,16 @@ ul {
 .exhibit-tile {
     display: flex;
     align-items: center;
-    background-color: hsl(0, 0%, 70%);
     margin-bottom: 1.6rem;
+}
+
+.exhibit-tile-text {
+    padding-top: 1.6rem;
 }
 
 .exhibit-tile img {
     max-width: 35%;
-    padding: 1.6rem;
+    padding-right: 1.6rem;
 }
 
 /*FOOTER*/
